@@ -8,7 +8,6 @@ dotenv.config();
 // Create a new Express application
 const app = express();
 
-// Set up the PostgreSQL connection pool using environment variables
 const pool = new Pool({
   user: process.env.DB_USER,
   host: process.env.DB_HOST,
